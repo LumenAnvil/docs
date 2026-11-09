@@ -60,6 +60,20 @@ stellar contract invoke --id <contract-id> --network testnet --source <identity>
 
 Each recipient receives their share of what the contract has received.
 
+## Checking what is owed
+
+Two read-only views report pending payouts without moving anything — useful for a dashboard or a check before releasing:
+
+```bash
+# What every recipient is owed right now, in one call:
+stellar contract invoke --id <contract-id> --network testnet --source <identity> -- \
+  releasable_all
+
+# The total that release_all would move right now:
+stellar contract invoke --id <contract-id> --network testnet --source <identity> -- \
+  pending_total
+```
+
 ## Next steps
 
 - [How it works](how-it-works.md) — the payout math
