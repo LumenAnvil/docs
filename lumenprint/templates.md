@@ -9,6 +9,7 @@ Lumenprint generates projects from templates. Each template is a complete, compi
 - **minimal** — a small working contract (such as a counter or hello-style contract), the simplest starting point.
 - **token** — a fungible-token-style contract skeleton. This is a starting point to build on, **not an audited token implementation** — treat it as scaffolding, not a finished, secure token.
 - **access** — a contract with a basic owner/admin authorization pattern, as a starting point for access-controlled contracts.
+- **events** — a contract that publishes events, the messages off-chain indexers and front-ends are built from. It uses the type-safe `#[contractevent]` macro and shows how to test emitted events. The event shapes it declares are exactly what [Lumenscan](../lumenscan/README.md) decodes.
 
 Each template compiles and its generated tests pass out of the box.
 
