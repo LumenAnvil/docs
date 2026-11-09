@@ -22,4 +22,5 @@
 * [Overview](lumenscan/README.md)
 * [Quickstart](lumenscan/quickstart.md)
 * [Output & reference](lumenscan/reference.md)
+* [In the browser](lumenscan/web.md)
 * [Contributing](lumenscan/contributing.md)

@@ -8,7 +8,7 @@ LumenAnvil is a suite of three complementary open-source Rust tools for the Stel
 
 - **[Lumenprint](lumenprint/README.md)** — a scaffolding CLI that generates correct, test-ready Soroban contract projects from templates, so you start from a compiling skeleton instead of assembling boilerplate.
 - **[Lumengate](lumengate/README.md)** — a deployable, reusable payment-splitter contract that routes incoming funds among recipients by configurable shares.
-- **[Lumenscan](lumenscan/README.md)** — an inspection CLI that fetches a deployed contract's WASM, decodes its interface spec and metadata, and shows what it exposes.
+- **[Lumenscan](lumenscan/README.md)** — an inspection CLI that fetches a deployed contract's WASM, decodes its interface spec and metadata, and shows what it exposes. It also runs [in the browser](lumenscan/web.md), with nothing to install.
 
 ## How they fit together
 
@@ -44,5 +44,6 @@ Lumenprint and Lumenscan are ordinary native Rust CLIs — they run on your mach
 
 - Organization: [github.com/LumenAnvil](https://github.com/LumenAnvil)
 - Lumenprint · Lumenscan · Lumengate repositories, all under the same org.
+- [Lumenscan on the web](https://lumenanvil.github.io/lumenscan-web/) · [its repository](https://github.com/LumenAnvil/lumenscan-web).
 
 All LumenAnvil tools are licensed under Apache-2.0.
