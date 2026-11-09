@@ -14,8 +14,15 @@ A deployed Soroban contract's interface is embedded in its WASM, but reading it 
 
 Lumenscan is the **inspect** stage. After scaffolding with [Lumenprint](../lumenprint/README.md) and deploying a contract (such as [Lumengate](../lumengate/README.md)), Lumenscan tells you exactly what the deployed contract exposes.
 
+## Prefer not to install anything?
+
+Lumenscan also runs as a static web app at
+**<https://lumenanvil.github.io/lumenscan-web/>** — same decoder, same type
+names, nothing to install. See [In the browser](web.md).
+
 ## Next
 
 - [Quickstart](quickstart.md) — inspect a contract
 - [Output & reference](reference.md) — commands and the JSON shape
+- [In the browser](web.md) — the web inspector
 - [Contributing](contributing.md)
