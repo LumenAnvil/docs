@@ -1,0 +1,26 @@
+name: Links
+
+# Catch broken internal links in the docs before they ship. Runs offline so it
+# checks every relative link between pages (and into the repo) without hitting
+# the network, which keeps it fast and free of flaky external rate limits.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  linkcheck:
+    name: Check Markdown links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --include-fragments "**/*.md"
+          fail: true
