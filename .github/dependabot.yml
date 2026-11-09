@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # Keep the GitHub Actions used by the link-check workflow current.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
